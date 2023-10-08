@@ -1,7 +1,11 @@
+const myColor = ["red", "blue", "green", "black", "white", "yellow", "blueviolet", "aquamarine"];
+
+
 const setBg = () => {
-    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    document.body.style.backgroundColor = "#" + randomColor;
+
+    const randomColor = myColor[Math.floor((Math.random() * myColor.length))];
+    document.body.style.backgroundColor = randomColor;
 }
 
-button.addEventListener("click", setBg);
+body.addEventListener("onload", setBg);
 setBg();
