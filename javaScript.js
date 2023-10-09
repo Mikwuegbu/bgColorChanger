@@ -8,4 +8,3 @@ const setBg = () => {
 }
 
 body.addEventListener("onload", setBg);
-setBg();
